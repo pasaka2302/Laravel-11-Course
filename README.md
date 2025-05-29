@@ -1,66 +1,72 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🚀 Laravel 12 Learning Project
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This is a personal learning project built using **Laravel 12**, inspired by a course on **Laracasts** that originally used Laravel 11. I decided to implement it using Laravel 12 to gain experience with the latest features.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📚 What I Learned
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+During the development of this project, I explored and practiced various Laravel features, including:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- 🧭 Routing (Web & API)
+- 🧰 Controllers & Resource Controllers
+- 🧼 Form Request Validation
+- 🔐 Authentication & Authorization
+- 🔑 Policies & Gates for user permissions
+- 🗃️ Eloquent ORM (model relationships like `hasMany`, `belongsTo`, etc.)
+- 🧱 Middleware usage
+- ⚠️ Error handling and custom responses
+- 🎨 A bit of Tailwind CSS for styling
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🛠️ Tech Stack
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **Laravel 12.x**
+- **PHP 8.2+**
+- **SQLite** (lightweight local database)
+- **Tailwind CSS** (basic usage)
+- **Laravel Breeze** *(optional - if used for auth)*
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## ⚙️ Getting Started
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Follow these steps to set up the project locally:
 
-### Premium Partners
+### 1. Clone the Repository
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+git clone https://github.com/pasaka2302/pasaka.git
+cd project-name
 
-## Contributing
+### 2. Install Dependencies
+-composer install
+npm install && npm run dev
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 3. Environment Setup
+cp .env.example .env
+php artisan key:generate
 
-## Code of Conduct
+### 4. Configure SQLite
+DB_CONNECTION=sqlite
+DB_DATABASE=/absolute/path/to/your/database/database.sqlite
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+OR
 
-## Security Vulnerabilities
+touch database/database.sqlite
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 5. Run Migrations
+php artisan migrate
 
-## License
+### 6. Start the Development Server
+php artisan serve
+Then visit http://localhost:8000
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+🚧 Future Plans
+- Enhance frontend using Tailwind CSS + Alpine.js or Livewire
+
+- Add more feature tests
+
+  🙏 Final Thoughts
+This project has helped me understand Laravel more deeply, especially how to manage user permissions using Policies and Gates. I also had a chance to get started with Tailwind CSS, which I plan to use more in future projects.
+
