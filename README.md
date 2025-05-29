@@ -8,7 +8,7 @@ This is a personal learning project built using **Laravel 12**, inspired by a co
 
 During the development of this project, I explored and practiced various Laravel features, including:
 
-- 🧭 Routing (Web & API)
+- 🧭 Routing (Web)
 - 🧰 Controllers & Resource Controllers
 - 🧼 Form Request Validation
 - 🔐 Authentication & Authorization
@@ -26,7 +26,6 @@ During the development of this project, I explored and practiced various Laravel
 - **PHP 8.2+**
 - **SQLite** (lightweight local database)
 - **Tailwind CSS** (basic usage)
-- **Laravel Breeze** *(optional - if used for auth)*
 
 ---
 
